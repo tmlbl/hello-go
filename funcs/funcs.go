@@ -1,4 +1,9 @@
-// funcs
+// Funcs
+// Functions in Go are defined using the func keyword.
+// Like JS, they can be passed around as parameters to
+// other functions. They can also return multiple typed
+// values. This creates the opportunity to return error
+// codes without overriding the function's normal return
 package main
 
 import (

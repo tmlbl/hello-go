@@ -5,6 +5,5 @@ import "fmt"
 
 func main() {
 	fmt.Println("Hello, World!")
-	fmt.Println("Yo Mom")
-	fmt.Scanf("Who are you?")
+	fmt.Println("Hi Mom")
 }
