@@ -22,3 +22,11 @@ func main() {
 	// "flattens" it into the value it points to
 	fmt.Printf("Flat Pointer: %v\n", *ptr)
 }
+
+/* OUTPUT:
+
+String: Hello Goodbye
+Address: 0xc21000a150
+Flat Pointer: Hello Goodbye
+
+*/

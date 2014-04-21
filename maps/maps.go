@@ -28,3 +28,13 @@ func main() {
 		}
 	}
 }
+
+/* OUTPUT:
+
+map[don:johnson doop:moog foo:bar]
+don johnson
+doop moog
+foo bar
+Aw look it's foo
+
+*/

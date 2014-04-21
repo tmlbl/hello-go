@@ -9,20 +9,32 @@ import (
 
 func main() {
 	square := powerOf(2)
-	n := 3
-	fmt.Printf("%d squared is %d\n", n, square(n))
 	cube := powerOf(3)
+	n := 3
+	i := 4
+	fmt.Printf("%d squared is %d\n", n, square(n))
+	fmt.Printf("%d squared is %d\n", i, square(i))
 	fmt.Printf("%d cubed is %d\n", n, cube(n))
+	fmt.Printf("%d cubed is %d\n", i, cube(i))
 }
 
 // A function factory that takes a power value
 // and returns a function that will raise an int
 // to that power
-func powerOf(pow int) (res func(int) int) {
+func powerOf(pow int) func(int) int {
 	return func(num int) int {
-		for i := 1; i < pow; i++ {
+		for i := 0; i < pow-1; i++ {
 			num *= num
 		}
 		return num
 	}
 }
+
+/* OUTPUT:
+
+3 squared is 9
+4 squared is 16
+3 cubed is 81
+4 cubed is 256
+
+*/

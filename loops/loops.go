@@ -13,7 +13,7 @@ func main() {
 		fmt.Printf("Iteration #%d\n", i+1)
 	}
 	// Example of a for loop iterating a string
-	message := "Grappa Dappa Doo"
+	message := "Grappa"
 	// For: range vars are key(or index) and value
 	// If the index is not needed, it must be replaced
 	// with the _ (discard) character, or it will throw
@@ -23,3 +23,25 @@ func main() {
 		fmt.Printf("Letter: %c\n", s)
 	}
 }
+
+/* OUTPUT:
+
+Iteration #1
+Iteration #2
+Iteration #3
+Iteration #4
+Iteration #5
+Rune code  71
+Letter: G
+Rune code  114
+Letter: r
+Rune code  97
+Letter: a
+Rune code  112
+Letter: p
+Rune code  112
+Letter: p
+Rune code  97
+Letter: a
+
+*/
