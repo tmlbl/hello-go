@@ -23,10 +23,11 @@ func main() {
 // to that power
 func powerOf(pow int) func(int) int {
 	return func(num int) int {
-		for i := 0; i < pow-1; i++ {
-			num *= num
+		res := 1
+		for i := 0; i < pow; i++ {
+			res *= num
 		}
-		return num
+		return res
 	}
 }
 
