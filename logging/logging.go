@@ -23,12 +23,20 @@ func main() {
 	fmt.Printf("Function took: %s\n", delta)
 	// Log has the same print functions as fmt,
 	// and they work in mostly the same way
-	// This empty print will only print the
+	// An empty print will only print the
 	// shortfile flag
-	log.Print("\n")
+	log.Print("Here we are on line 28\n")
 }
 
 func thing() string {
 	time.Sleep(10000)
 	return "hello woooorld"
 }
+
+/* OUTPUT:
+
+hello woooorld
+Function took: 356.763us
+logging.go:28: Here we are on line 28
+
+*/
